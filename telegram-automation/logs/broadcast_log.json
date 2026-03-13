@@ -1,0 +1,436 @@
+{
+  "timestamp": "2026-03-12T17:58:16.519564",
+  "stats": {
+    "total": 102,
+    "sent": 40,
+    "sent_with_photo": 34,
+    "sent_text_only": 6,
+    "failed": 29,
+    "skipped_limit": 0,
+    "errors": [
+      {
+        "chat_id": "Sa_mira_bags",
+        "chat_name": "Sa_mira Bags Luxury",
+        "error": "RPCError 403: ALLOW_PAYMENT_REQUIRED_400 (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "Event_work_SPB",
+        "chat_name": "Event вакансии | работа. СПб и Москва",
+        "error": "The channel specified is private and you lack permission to access it. Another reason may be that yo"
+      },
+      {
+        "chat_id": "rabota_msk_jobs",
+        "chat_name": "РАБОТА | ПОДРАБОТКА | ВАКАНСИИ | МОСКВА",
+        "error": "A wait of 3600 seconds is required before sending another message in this chat (caused by SendMessag"
+      },
+      {
+        "chat_id": "Mskjob2",
+        "chat_name": "Москва JOB работа",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "vacanciesmoscow1",
+        "chat_name": "Вакансии Москва|Работа|Подработка|Шабашка",
+        "error": "A wait of 900 seconds is required before sending another message in this chat (caused by SendMessage"
+      },
+      {
+        "chat_id": "rabota_moskow_career",
+        "chat_name": "Вакансии в Москве 📣",
+        "error": "A wait of 3600 seconds is required before sending another message in this chat (caused by SendMessag"
+      },
+      {
+        "chat_id": "rabota177moscow",
+        "chat_name": "Работа Вакансии Москва",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "promoeventjob",
+        "chat_name": "Подработка 💢 Москва (лоукост): начинающие, промоутеры, массовка, хэлперы и др.",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "elephantposttt",
+        "chat_name": "Elephant post",
+        "error": "Chat admin privileges are required to do that in the specified chat (for example, to send a message "
+      },
+      {
+        "chat_id": "rabotaall",
+        "chat_name": "Вакансии Работа Москва Химки Путилково",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "povara_mos",
+        "chat_name": "Повар | Москва",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "VladCargo1",
+        "chat_name": "Грузоперевозки Владивосток | Переезды, грузчики, доставка",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "uborka_moyka_msk",
+        "chat_name": "Мойщицы Мск | Подработка | Вакансии",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "gulshodnluzb",
+        "chat_name": "Salomatlik va Go'zallik NL",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "v_sochi_rabota",
+        "chat_name": "Работа в Сочи ⛑ Подработки Халтура Грузчики рабочие Адлера * Адлер подработка вакансии Грузоперевозки Вывоз мусора Разнорабочие",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "cerb_news",
+        "chat_name": "CERBERUS",
+        "error": "Chat admin privileges are required to do that in the specified chat (for example, to send a message "
+      },
+      {
+        "chat_id": "trud_moscow",
+        "chat_name": "Работа/подработка №1 (Москва)",
+        "error": "A wait of 300 seconds is required before sending another message in this chat (caused by SendMessage"
+      },
+      {
+        "chat_id": "2340462570",
+        "chat_name": "Новый день. Рязань чат.",
+        "error": "Cannot find any entity corresponding to \"2340462570\""
+      },
+      {
+        "chat_id": "kazan_rabot",
+        "chat_name": "Казань работа ТАЯНЧ TAYANCH",
+        "error": "A wait of 900 seconds is required before sending another message in this chat (caused by SendMessage"
+      },
+      {
+        "chat_id": "moskwa_rabota24",
+        "chat_name": "Работа в Москве Москва работа Доска Объявлений #работa",
+        "error": "A wait of 900 seconds is required before sending another message in this chat (caused by SendMessage"
+      },
+      {
+        "chat_id": "2162962241",
+        "chat_name": "СТРОЙКА В РОССИИ",
+        "error": "Cannot find any entity corresponding to \"2162962241\""
+      },
+      {
+        "chat_id": "horeca_rtchat",
+        "chat_name": "ОБЩЕПИТ.КАЗАНЬ. РАБОТА",
+        "error": "A wait of 300 seconds is required before sending another message in this chat (caused by SendMessage"
+      },
+      {
+        "chat_id": "rabota_kunlik",
+        "chat_name": "Кулик Иш Москва",
+        "error": "The chat is restricted and cannot be used in that request (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "vladivostokkreklama",
+        "chat_name": "Работа Реклама Владивосток",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "dv_khabarovsk27",
+        "chat_name": "Объявления в Хабаровске",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "HandBaseMsk",
+        "chat_name": "Москва работа и рабочие руки",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      },
+      {
+        "chat_id": "2496583878",
+        "chat_name": "Нейроархив",
+        "error": "Cannot find any entity corresponding to \"2496583878\""
+      },
+      {
+        "chat_id": "3125768322",
+        "chat_name": "В ДЕНЬ 1ОК+",
+        "error": "Cannot find any entity corresponding to \"3125768322\""
+      },
+      {
+        "chat_id": "stroitelstvo_moskva",
+        "chat_name": "Строительство Москва 🏗 МСК Инженерка в Москве | Стройка работа | Строители Москвы | Ремонт Отделка",
+        "error": "You can't write in this chat (caused by SendMessageRequest)"
+      }
+    ]
+  },
+  "processed_chats": [
+    {
+      "id": "passiveincome_69",
+      "name": "Пассивный доход с 0"
+    },
+    {
+      "id": "yclugibezen",
+      "name": "Услуги безенчук"
+    },
+    {
+      "id": "Sa_mira_bags",
+      "name": "Sa_mira Bags Luxury"
+    },
+    {
+      "id": "Event_work_SPB",
+      "name": "Event вакансии | работа. СПб и Москва"
+    },
+    {
+      "id": "KazanHaltura",
+      "name": "Казань Халтура одработка Работа Фриланс"
+    },
+    {
+      "id": "rabota_msk_jobs",
+      "name": "РАБОТА | ПОДРАБОТКА | ВАКАНСИИ | МОСКВА"
+    },
+    {
+      "id": "Mskjob2",
+      "name": "Москва JOB работа"
+    },
+    {
+      "id": "vacanciesmoscow1",
+      "name": "Вакансии Москва|Работа|Подработка|Шабашка"
+    },
+    {
+      "id": "doska_obyavleniy_Krasnogorsk",
+      "name": "👉 Красногорск товары и услуги. Объявления, барахолка, вакансии, работа, резюме. Базар"
+    },
+    {
+      "id": "rabota_moskow_career",
+      "name": "Вакансии в Москве 📣"
+    },
+    {
+      "id": "rabota177moscow",
+      "name": "Работа Вакансии Москва"
+    },
+    {
+      "id": "zahodibrat62",
+      "name": "Рязань , Москва , МО,работа подработка , мексиканцы, лучшие цены"
+    },
+    {
+      "id": "BLASK779",
+      "name": "Работа ва реклама во ВЛАДИВОСТОК & ИШ ВА ЭЛОНЛАР€"
+    },
+    {
+      "id": "promoeventjob",
+      "name": "Подработка 💢 Москва (лоукост): начинающие, промоутеры, массовка, хэлперы и др."
+    },
+    {
+      "id": "elephantposttt",
+      "name": "Elephant post"
+    },
+    {
+      "id": "barmeny_lipetsk_rabota_chat",
+      "name": "Бармены Липецк | Работа в баре, в ресторане, свежие вакансии, резюме, подработка в общепите, чат"
+    },
+    {
+      "id": "rabotaall",
+      "name": "Вакансии Работа Москва Химки Путилково"
+    },
+    {
+      "id": "rabota_ru777",
+      "name": "Работа - услуги - вакансии. Москва - Россия. 2023"
+    },
+    {
+      "id": "povara_mos",
+      "name": "Повар | Москва"
+    },
+    {
+      "id": "Jerdamoskvarabot",
+      "name": "Жердеш Москва работа"
+    },
+    {
+      "id": "VladCargo1",
+      "name": "Грузоперевозки Владивосток | Переезды, грузчики, доставка"
+    },
+    {
+      "id": "uborka_moyka_msk",
+      "name": "Мойщицы Мск | Подработка | Вакансии"
+    },
+    {
+      "id": "ishborVladivastok",
+      "name": "🇺🇿ВЛАДИВОСТОК РАБОТА🇺🇿"
+    },
+    {
+      "id": "Rabota_Moskva_Vakhta_sklad_group",
+      "name": "Работа Москва Вахта (склады)"
+    },
+    {
+      "id": "shukhrat88Tigr",
+      "name": "🕋🕋Казань, Москва, Санкт-Петербург иш элонлар(Работы объявления вакансии ✌️"
+    },
+    {
+      "id": "xaitmatova81",
+      "name": "ПУЛ ТИКМАСДАН ПУЛ ТОПИШ СИРЛАРИ"
+    },
+    {
+      "id": "ofitsianty_vladivostok_rabota",
+      "name": "Официанты Владивосток | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат"
+    },
+    {
+      "id": "gulshodnluzb",
+      "name": "Salomatlik va Go'zallik NL"
+    },
+    {
+      "id": "v_sochi_rabota",
+      "name": "Работа в Сочи ⛑ Подработки Халтура Грузчики рабочие Адлера * Адлер подработка вакансии Грузоперевозки Вывоз мусора Разнорабочие"
+    },
+    {
+      "id": "Working2021st",
+      "name": "Работа в строительстве Москва и область , объявления!."
+    },
+    {
+      "id": "moskva_ish_elonlari1",
+      "name": "ВНИМАНИЕ РАБОТА"
+    },
+    {
+      "id": "pip_work_msk",
+      "name": "ПИП работа Москва и область"
+    },
+    {
+      "id": "etotvoyarabota",
+      "name": "Работа📒 МОСКВА💸 Свежие вакансии 🔥🔥🔥"
+    },
+    {
+      "id": "cerb_news",
+      "name": "CERBERUS"
+    },
+    {
+      "id": "trud_moscow",
+      "name": "Работа/подработка №1 (Москва)"
+    },
+    {
+      "id": "2340462570",
+      "name": "Новый день. Рязань чат."
+    },
+    {
+      "id": "huuriromol8917nigora",
+      "name": "💜💜💜 ХУРИ РОМОЛЛАРИ ОПТОМ.💜💜💜😃😃"
+    },
+    {
+      "id": "vladivostok_ish_va_kvartira",
+      "name": "Владивосток срочно работа"
+    },
+    {
+      "id": "kazan_rabot",
+      "name": "Казань работа ТАЯНЧ TAYANCH"
+    },
+    {
+      "id": "Ryzan62",
+      "name": "Рязань работа для всех62🇸🇮"
+    },
+    {
+      "id": "moskwa_rabota24",
+      "name": "Работа в Москве Москва работа Доска Объявлений #работa"
+    },
+    {
+      "id": "2162962241",
+      "name": "СТРОЙКА В РОССИИ"
+    },
+    {
+      "id": "povara_sochi_rabota_vakansii",
+      "name": "Повара Сочи | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат"
+    },
+    {
+      "id": "CianAvito",
+      "name": "ЖУМУШ МОСКВА РАБОТА ХАЛТУРА БАРАКА"
+    },
+    {
+      "id": "horeca_rtchat",
+      "name": "ОБЩЕПИТ.КАЗАНЬ. РАБОТА"
+    },
+    {
+      "id": "kiloli_unversal_kiyimlar",
+      "name": "💥OPTOM XITOY KIYIMLARI💥💥💥UNIVERSAL TOVARLAR💥"
+    },
+    {
+      "id": "rabota_kunlik",
+      "name": "Кулик Иш Москва"
+    },
+    {
+      "id": "rusvacant_kazan",
+      "name": "Казань / Срочные вакансии/ Запрос услуг"
+    },
+    {
+      "id": "Rabota125vladivostok",
+      "name": "Реклама и работа во Владивостоке"
+    },
+    {
+      "id": "rab_msk",
+      "name": "Объекты - работа Москва"
+    },
+    {
+      "id": "KAZAN_NE_AVITO",
+      "name": "Купи, продай, работа, услуги Казань"
+    },
+    {
+      "id": "rabotaRT_16",
+      "name": "Работа ТАТАРСТАН Казань Челны Альметьевск Елабуга"
+    },
+    {
+      "id": "qsrtuo",
+      "name": "А"
+    },
+    {
+      "id": "vladivostokkreklama",
+      "name": "Работа Реклама Владивосток"
+    },
+    {
+      "id": "BCE_B_1_CHAT",
+      "name": "Все В Одном chat"
+    },
+    {
+      "id": "dv_khabarovsk27",
+      "name": "Объявления в Хабаровске"
+    },
+    {
+      "id": "modelsmoscow777",
+      "name": "Работа Подработка ежедневные выплаты , Москва"
+    },
+    {
+      "id": "HandBaseMsk",
+      "name": "Москва работа и рабочие руки"
+    },
+    {
+      "id": "vladivostok_rabota_ish_elonlari",
+      "name": "ВЛАДИВОСТОК ОБЪЯВЛЕНИЯ О ВАКАНСИЯХ РЕКЛАМА"
+    },
+    {
+      "id": "KazanRabota116rus",
+      "name": "КАЗАНЬ°ОБЪЯВЛЕНИЯ°РАБОТА°ПОДРАБОТКА°БАРАХОЛКА°"
+    },
+    {
+      "id": "povara_lipetsk_rabota_vakansii",
+      "name": "Повара Липецк | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат"
+    },
+    {
+      "id": "doska_obyavleniy_Vladivostok",
+      "name": "👉 Владивосток товары и услуги. Объявления, барахолка, вакансии, работа, резюме. Базар"
+    },
+    {
+      "id": "povara_ryazan_rabota_vakansii",
+      "name": "Повара Рязань | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат"
+    },
+    {
+      "id": "rabotamskkg",
+      "name": "МОСКВА РАБОТА"
+    },
+    {
+      "id": "2496583878",
+      "name": "Нейроархив"
+    },
+    {
+      "id": "3125768322",
+      "name": "В ДЕНЬ 1ОК+"
+    },
+    {
+      "id": "stroitelstvo_moskva",
+      "name": "Строительство Москва 🏗 МСК Инженерка в Москве | Стройка работа | Строители Москвы | Ремонт Отделка"
+    },
+    {
+      "id": "grynt75755",
+      "name": "Грузчики | Разнарабочий Москва"
+    },
+    {
+      "id": "moskvarabotnik",
+      "name": "МОСКВА РАБОТА, ЖУМУШ МОСКВА"
+    }
+  ]
+}

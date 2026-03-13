@@ -1,0 +1,619 @@
+{
+  "_comment": "Список чатов для рассылки",
+  "_version": "1.0.0",
+  "_total_found": 102,
+  "chats": [
+    {
+      "id": "rabota_v_moskve_chat",
+      "name": "[Чат] Работа | Москва | Вакансии | Подработка",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "cerb_news",
+      "name": "CERBERUS",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "elephantposttt",
+      "name": "Elephant post",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Event_work_SPB",
+      "name": "Event вакансии | работа. СПб и Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Sa_mira_bags",
+      "name": "Sa_mira Bags Luxury",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "gulshodnluzb",
+      "name": "Salomatlik va Go'zallik NL",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "sizbizgakerksiz",
+      "name": "SOG‘LOM OZIB TABBIY YOSHLIK SARI OLG‘A",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "workarena",
+      "name": "WORKARENA •ПОДРАБОТКИ МОСКВА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "YandexPartnerGroup",
+      "name": "YandexPartnerGroup",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "1072667694667",
+      "name": "YandexPartnerGroup Messages",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "qsrtuo",
+      "name": "А",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "barmeny_lipetsk_rabota_chat",
+      "name": "Бармены Липецк | Работа в баре, в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "3125768322",
+      "name": "В ДЕНЬ 1ОК+",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_moskow_career",
+      "name": "Вакансии в Москве 📣",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vacanciesmoscow1",
+      "name": "Вакансии Москва|Работа|Подработка|Шабашка",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabotaall",
+      "name": "Вакансии Работа Москва Химки Путилково",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_rabochiy",
+      "name": "Вакансии/разнорабочии/работа/Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vladivostok_rabota_ish_elonlari",
+      "name": "ВЛАДИВОСТОК ОБЪЯВЛЕНИЯ О ВАКАНСИЯХ РЕКЛАМА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vladivostok_rabota_ish",
+      "name": "Владивосток работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vladivostok_ish_va_kvartira",
+      "name": "Владивосток срочно работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "moskva_ish_elonlari1",
+      "name": "ВНИМАНИЕ РАБОТА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "BCE_B_1_CHAT",
+      "name": "Все В Одном chat",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "ginekologShaxnozaRaximova1",
+      "name": "ГИНЕКОЛОГ ЛАЗЕР ШАХНОЗА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "VladCargo1",
+      "name": "Грузоперевозки Владивосток | Переезды, грузчики, доставка",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "grynt75755",
+      "name": "Грузчики | Разнарабочий Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "2647729780",
+      "name": "Доставка цветов Владивосток",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Jerdamoskvarabot",
+      "name": "Жердеш Москва работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "CianAvito",
+      "name": "ЖУМУШ МОСКВА РАБОТА ХАЛТУРА БАРАКА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "kazan_vakansii_rabota",
+      "name": "Казань - Срочные вакансии. Работа, подработка.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rusvacant_kazan",
+      "name": "Казань / Срочные вакансии/ Запрос услуг",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "KazanRabotai",
+      "name": "КАЗАНЬ РАБОТА - СПРАШИВАЙ И ПРЕДЛАГАЙ",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "kazan_rabot",
+      "name": "Казань работа ТАЯНЧ TAYANCH",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "KazanHaltura",
+      "name": "Казань Халтура одработка Работа Фриланс",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "KazanRabota116rus",
+      "name": "КАЗАНЬ°ОБЪЯВЛЕНИЯ°РАБОТА°ПОДРАБОТКА°БАРАХОЛКА°",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_kunlik",
+      "name": "Кулик Иш Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "KAZAN_NE_AVITO",
+      "name": "Купи, продай, работа, услуги Казань",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "lipetsku",
+      "name": "Липецк Чат Объявления Барахолка",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "market_mska",
+      "name": "МАРКЕТ МОСКВА | Объявления | Барахолка | Доска объявлений | Авторынок | Недвижимость | Вакансии | Работа | Чат | Общение",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "uborka_moyka_msk",
+      "name": "Мойщицы Мск | Подработка | Вакансии",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "KrasnogorskMsk",
+      "name": "Москва - (Объявления, услуги, вакансии)",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Mskjob2",
+      "name": "Москва JOB работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabotamskkg",
+      "name": "МОСКВА РАБОТА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "moskva_elon_va_ish",
+      "name": "Москва работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "HandBaseMsk",
+      "name": "Москва работа и рабочие руки",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "omat_kanali",
+      "name": "Москва работа Москва иш эьлонлари👮👮‍♀",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "moskvarabotnik",
+      "name": "МОСКВА РАБОТА, ЖУМУШ МОСКВА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_in_piter",
+      "name": "МОСКВА 🏢 САНКТ-ПЕТЕРБУРГ 🏢 РАБОТА🛠",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "biwkekhhh",
+      "name": "Москва-Бишкек (жумуш-работа)",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "maskivaishelon",
+      "name": "Москва-таянч работа Иш Елон",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "2496583878",
+      "name": "Нейроархив",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "4601663373",
+      "name": "Нейроархив",
+      "type": "chat",
+      "enabled": true
+    },
+    {
+      "id": "2340462570",
+      "name": "Новый день. Рязань чат.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "horeca_rtchat",
+      "name": "ОБЩЕПИТ.КАЗАНЬ. РАБОТА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rab_msk",
+      "name": "Объекты - работа Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "dv_khabarovsk27",
+      "name": "Объявления в Хабаровске",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "ofitsianty_vladivostok_rabota",
+      "name": "Официанты Владивосток | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "passiveincome_69",
+      "name": "Пассивный доход с 0",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "pip_work_msk",
+      "name": "ПИП работа Москва и область",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "povara_mos",
+      "name": "Повар | Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "povara_lipetsk_rabota_vakansii",
+      "name": "Повара Липецк | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "povara_ryazan_rabota_vakansii",
+      "name": "Повара Рязань | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "povara_sochi_rabota_vakansii",
+      "name": "Повара Сочи | Работа в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "podrabotkarabotarassia",
+      "name": "Подработка работа халтура ПоРоссии.Уфа.Казань.Москва.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "promoeventjob",
+      "name": "Подработка 💢 Москва (лоукост): начинающие, промоутеры, массовка, хэлперы и др.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "xaitmatova81",
+      "name": "ПУЛ ТИКМАСДАН ПУЛ ТОПИШ СИРЛАРИ",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_ru777",
+      "name": "Работа - услуги - вакансии. Москва - Россия. 2023",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_msk_jobs",
+      "name": "РАБОТА | ПОДРАБОТКА | ВАКАНСИИ | МОСКВА",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "land_job",
+      "name": "Работа в Москве и МО. Работа Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "moskwa_rabota24",
+      "name": "Работа в Москве Москва работа Доска Объявлений #работa",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "adler_vakansii",
+      "name": "Работа в Сочи | Краснодаре",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "v_sochi_rabota",
+      "name": "Работа в Сочи ⛑ Подработки Халтура Грузчики рабочие Адлера * Адлер подработка вакансии Грузоперевозки Вывоз мусора Разнорабочие",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Working2021st",
+      "name": "Работа в строительстве Москва и область , объявления!.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "BLASK779",
+      "name": "Работа ва реклама во ВЛАДИВОСТОК & ИШ ВА ЭЛОНЛАР€",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota177moscow",
+      "name": "Работа Вакансии Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "prpzrahno",
+      "name": "Работа вахтой Москва, Московская обл. Мужчины/женщины/семейные пары",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "work_moskow_chat",
+      "name": "Работа и Услуги Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabotakazantatar",
+      "name": "Работа Казань Татарстан",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Rabota_Moskva_Vakhta_sklad_group",
+      "name": "Работа Москва Вахта (склады)",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Work_Moskow_Russia",
+      "name": "Работа Москва и область [Вакансии] [ЧАТ]",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "podrabotkavmoskveirossii",
+      "name": "Работа Москва Подработка Россия",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "RABOTA_MSK4U",
+      "name": "РАБОТА МОСКВА🇰🇬🇷🇺🇰🇿🇺🇿",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "modelsmoscow777",
+      "name": "Работа Подработка ежедневные выплаты , Москва",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vladivostokkreklama",
+      "name": "Работа Реклама Владивосток",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabota_sochi_vakansii_chat",
+      "name": "Работа Сочи | Вакансии | Чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "rabotaRT_16",
+      "name": "Работа ТАТАРСТАН Казань Челны Альметьевск Елабуга",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Rabota_SFO_DVFO",
+      "name": "Работа.Услуги.Торговля.Новосибирск,Владивосток,Барнаул,Иркутск,Омск,Томск,Биробиджан,Магадан,Хабаровск,Якутск,Чита,Улан-Удэ.",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "trud_moscow",
+      "name": "Работа/подработка №1 (Москва)",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "etotvoyarabota",
+      "name": "Работа📒 МОСКВА💸 Свежие вакансии 🔥🔥🔥",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Rabota125vladivostok",
+      "name": "Реклама и работа во Владивостоке",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "zahodibrat62",
+      "name": "Рязань , Москва , МО,работа подработка , мексиканцы, лучшие цены",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "Ryzan62",
+      "name": "Рязань работа для всех62🇸🇮",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "ryazanrabota",
+      "name": "Рязань работа👷‍♂",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "stroitelstvo_moskva",
+      "name": "Строительство Москва 🏗 МСК Инженерка в Москве | Стройка работа | Строители Москвы | Ремонт Отделка",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "2162962241",
+      "name": "СТРОЙКА В РОССИИ",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "yclugibezen",
+      "name": "Услуги безенчук",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "ishborVladivastok",
+      "name": "🇺🇿ВЛАДИВОСТОК РАБОТА🇺🇿",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "doska_obyavleniy_Vladivostok",
+      "name": "👉 Владивосток товары и услуги. Объявления, барахолка, вакансии, работа, резюме. Базар",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "doska_obyavleniy_Krasnogorsk",
+      "name": "👉 Красногорск товары и услуги. Объявления, барахолка, вакансии, работа, резюме. Базар",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "vacansiaohrana",
+      "name": "👮‍♂👮‍♂ОХРАНА - ВАХТА 5⃣",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "huuriromol8917nigora",
+      "name": "💜💜💜 ХУРИ РОМОЛЛАРИ ОПТОМ.💜💜💜😃😃",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "kiloli_unversal_kiyimlar",
+      "name": "💥OPTOM XITOY KIYIMLARI💥💥💥UNIVERSAL TOVARLAR💥",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "shukhrat88Tigr",
+      "name": "🕋🕋Казань, Москва, Санкт-Петербург иш элонлар(Работы объявления вакансии ✌️",
+      "type": "channel",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "_comment": "Telegram Automation Configuration",
+  "_version": "1.0.0",
+
+  "telegram": {
+    "_comment": "API credentials from my.telegram.org",
+    "api_id": 33189091,
+    "api_hash": "b3fb159d6cc574e0ed25caeb13afdd03",
+    "phone": "+6283115634848"
+  },
+
+  "message_limits": {
+    "_comment": "Telegram limits 2024-2026. New account: 50-100/day, Warmed: 200-300/day",
+    "daily_limit": 40,
+    "hourly_limit": 10,
+    "messages_before_pause": 5,
+    "pause_after_series_minutes": 30
+  },
+
+  "delays": {
+    "_comment": "Random delays between messages (seconds)",
+    "min_delay_seconds": 90,
+    "max_delay_seconds": 180,
+    "startup_delay_seconds": 10
+  },
+
+  "auto_reply": {
+    "_comment": "Automatic reply settings",
+    "enabled": true,
+    "delay_seconds": 5,
+    "only_to_replies": true
+  },
+
+  "proxy": {
+    "_comment": "Proxy settings (optional for MVP)",
+    "enabled": false,
+    "type": "http",
+    "host": "",
+    "port": 0,
+    "username": "",
+    "password": ""
+  },
+
+  "logging": {
+    "_comment": "Logging configuration",
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "backup_count": 5
+  },
+
+  "database": {
+    "_comment": "Database settings",
+    "path": "database/automation.db",
+    "wal_mode": true
+  },
+
+  "session": {
+    "_comment": "Session file settings",
+    "path": "sessions/userbot"
+  }
+}
