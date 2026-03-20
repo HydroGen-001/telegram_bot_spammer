@@ -1,7 +1,6 @@
 {
-  "_comment": "Список чатов для рассылки",
-  "_version": "1.0.0",
-  "_total_found": 102,
+  "_comment": "Чаты для рассылки",
+  "_total": 101,
   "chats": [
     {
       "id": "rabota_v_moskve_chat",
@@ -22,12 +21,6 @@
       "enabled": true
     },
     {
-      "id": "Event_work_SPB",
-      "name": "Event вакансии | работа. СПб и Москва",
-      "type": "channel",
-      "enabled": true
-    },
-    {
       "id": "Sa_mira_bags",
       "name": "Sa_mira Bags Luxury",
       "type": "channel",
@@ -36,12 +29,6 @@
     {
       "id": "gulshodnluzb",
       "name": "Salomatlik va Go'zallik NL",
-      "type": "channel",
-      "enabled": true
-    },
-    {
-      "id": "sizbizgakerksiz",
-      "name": "SOG‘LOM OZIB TABBIY YOSHLIK SARI OLG‘A",
       "type": "channel",
       "enabled": true
     },
@@ -66,6 +53,18 @@
     {
       "id": "qsrtuo",
       "name": "А",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "avito_use",
+      "name": "Авито • удаленная работа",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "yankee_motorsby",
+      "name": "Авто под Заказ - YankeeMotors🚘🚘",
       "type": "channel",
       "enabled": true
     },
@@ -192,12 +191,6 @@
     {
       "id": "kazan_rabot",
       "name": "Казань работа ТАЯНЧ TAYANCH",
-      "type": "channel",
-      "enabled": true
-    },
-    {
-      "id": "KazanHaltura",
-      "name": "Казань Халтура одработка Работа Фриланс",
       "type": "channel",
       "enabled": true
     },
