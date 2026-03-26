@@ -1,7 +1,6 @@
 {
   "_comment": "Конфигурация мультиаккаунтной рассылки",
   "_version": "1.0.0",
-  
   "settings": {
     "auto_distribute_chats": true,
     "min_delay_between_messages": 50,
@@ -9,17 +8,15 @@
     "daily_limit_per_account": 500,
     "retry_on_flood_wait": true
   },
-
   "accounts": [
     {
       "id": 1,
       "name": "Аккаунт 1 (OSNOVNOY)",
       "enabled": true,
       "session_name": "userbot",
-      "api_id": 0,
-      "api_hash": "",
-      "phone": "",
-      
+      "api_id": 26680307,
+      "api_hash": "11fe6a7625e5c368e494c40f29066de0",
+      "phone": "+79124922318",
       "proxy": {
         "enabled": true,
         "host": "mobpool.proxy.market",
@@ -27,19 +24,16 @@
         "username": "rTtqcDc4t0Kg",
         "password": "wkLYa1bq"
       },
-      
       "script": {
         "enabled": true,
         "template_id": 3,
         "custom_text": null
       },
-      
       "photo": {
         "enabled": true,
         "use_default": true,
         "custom_path": null
       },
-      
       "limits": {
         "use_global": true,
         "daily_limit": 500,
@@ -55,7 +49,6 @@
       "api_id": 0,
       "api_hash": "",
       "phone": "",
-      
       "proxy": {
         "enabled": true,
         "host": "mobpool.proxy.market",
@@ -63,19 +56,41 @@
         "username": "",
         "password": ""
       },
-      
       "script": {
         "enabled": false,
         "template_id": null,
         "custom_text": null
       },
-      
       "photo": {
         "enabled": true,
         "use_default": true,
         "custom_path": null
       },
-      
+      "limits": {
+        "use_global": true,
+        "daily_limit": 500,
+        "min_delay": 50,
+        "max_delay": 100
+      }
+    },
+    {
+      "id": 3,
+      "name": "Аккаунт 3",
+      "enabled": false,
+      "session_name": "account_3",
+      "api_id": 26680307,
+      "api_hash": "11fe6a7625e5c368e494c40f29066de0",
+      "phone": "+79124922318",
+      "script": {
+        "enabled": false,
+        "template_id": null,
+        "custom_text": null
+      },
+      "photo": {
+        "enabled": true,
+        "use_default": true,
+        "custom_path": null
+      },
       "limits": {
         "use_global": true,
         "daily_limit": 500,

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-broadcaster
+    volumes:
+      # Подключите ваши файлы
+      - ./sessions:/app/sessions
+      - ./config:/app/config
+      - ./accounts.json:/app/accounts.json
+      - ./.env:/app/.env
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped

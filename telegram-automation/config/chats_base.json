@@ -1,6 +1,5 @@
 {
-  "_comment": "Чаты для рассылки (из аккаунта 1)",
-  "_version": "1.0.0",
+  "_comment": "Чаты для рассылки",
   "_total": 101,
   "chats": [
     {
@@ -64,18 +63,6 @@
       "enabled": true
     },
     {
-      "id": "yankeemotorsbelarus",
-      "name": "Авто под Заказ - Yankee Motors",
-      "type": "channel",
-      "enabled": true
-    },
-    {
-      "id": "yankee_motors_by",
-      "name": "Авто под Заказ - Yankee Motors",
-      "type": "channel",
-      "enabled": true
-    },
-    {
       "id": "yankee_motorsby",
       "name": "Авто под Заказ - YankeeMotors🚘🚘",
       "type": "channel",
@@ -84,6 +71,12 @@
     {
       "id": "barmeny_lipetsk_rabota_chat",
       "name": "Бармены Липецк | Работа в баре, в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "3125768322",
+      "name": "В ДЕНЬ 1ОК+",
       "type": "channel",
       "enabled": true
     },
@@ -220,7 +213,7 @@
       "enabled": true
     },
     {
-      "id": "2389231850",
+      "id": "lipetsku",
       "name": "Липецк Чат Объявления Барахолка",
       "type": "channel",
       "enabled": true
@@ -306,7 +299,7 @@
     {
       "id": "4601663373",
       "name": "Нейроархив",
-      "type": "group",
+      "type": "chat",
       "enabled": true
     },
     {
@@ -600,6 +593,12 @@
     {
       "id": "huuriromol8917nigora",
       "name": "💜💜💜 ХУРИ РОМОЛЛАРИ ОПТОМ.💜💜💜😃😃",
+      "type": "channel",
+      "enabled": true
+    },
+    {
+      "id": "kiloli_unversal_kiyimlar",
+      "name": "💥OPTOM XITOY KIYIMLARI💥💥💥UNIVERSAL TOVARLAR💥",
       "type": "channel",
       "enabled": true
     },

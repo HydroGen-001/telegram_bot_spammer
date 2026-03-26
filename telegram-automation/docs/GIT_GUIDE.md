@@ -5,7 +5,7 @@
 ### На текущем компьютере
 
 ```cmd
-cd "c:\Users\ACER\OneDrive\Desktop\Новая папка (4)\telegram-automation"
+cd "c:\Users\ACER\OneDrive\Desktop\project\telegram-automation"
 
 # Инициализация Git
 git init
@@ -42,10 +42,10 @@ copy .env.example .env
 # Скопируйте файл userbot.session в папку sessions\
 
 # Проверка сессии
-python check_session.py
+python start.py → пункт 4
 
 # Запуск
-python src\main.py
+python start.py
 ```
 
 ---
@@ -54,14 +54,16 @@ python src\main.py
 
 | Файлы | Синхронизация |
 |-------|---------------|
-| ✅ Исходный код (`src/`) | Да |
+| ✅ Исходный код (`*.py`) | Да |
 | ✅ Конфигурация (`config/`) | Да |
 | ✅ Зависимости (`requirements.txt`) | Да |
-| ✅ Документация (`*.md`) | Да |
+| ✅ Документация (`docs/`) | Да |
+| ✅ Тесты (`tests/`) | Да |
 | ❌ `.env` | Нет (создавать вручную) |
 | ❌ `sessions/*.session` | Нет (копировать вручную) |
 | ❌ `database/*.db` | Нет (локальная история) |
-| ❌ `logs/*.log` | Нет |
+| ❌ `logs/` | Нет |
+| ❌ `__pycache__/` | Нет |
 
 ---
 
@@ -71,6 +73,9 @@ python src\main.py
 - `.env` — содержит API ключи
 - `sessions/*.session` — доступ к Telegram
 - `database/*.db` — личные данные
+- `logs/*.log`, `logs/*.json` — логи работы
+
+Эти файлы уже указаны в `.gitignore` и не попадут в репозиторий.
 
 ### Если случайно закоммитили чувствительные данные:
 
@@ -99,7 +104,7 @@ git push
 ```cmd
 git pull
 pip install -r requirements.txt  # если обновились зависимости
-python src\main.py
+python start.py
 ```
 
 ---
@@ -126,5 +131,54 @@ python src\main.py
 - [ ] Создать `.env` с API ключами
 - [ ] Скопировать `sessions/userbot.session`
 - [ ] Установить зависимости: `pip install -r requirements.txt`
-- [ ] Проверить сессию: `python check_session.py`
-- [ ] Запустить: `python src\main.py`
+- [ ] Запустить: `python start.py`
+
+---
+
+## Структура проекта
+
+```
+telegram-automation/
+├── 📄 start.py                    ← Главное меню
+├── 📄 login_with_proxy.py         ← Авторизация с прокси
+├── 📄 auth_accounts.py            ← Быстрая авторизация
+├── 📄 multi_account_start.py      ← Мультиаккаунтное меню
+├── 📄 accounts.json               ← Конфиг мультиаккаунтов
+│
+├── 📁 core/                       ← Ядро системы
+│   ├── client.py
+│   ├── broadcaster.py
+│   └── auth.py
+│
+├── 📁 multi_account/              ← Мультиаккаунтная рассылка
+│   ├── config.py
+│   ├── manager.py
+│   └── broadcaster.py
+│
+├── 📁 src/                        ← Автоматизированная система
+│   ├── main.py
+│   ├── core/
+│   ├── modules/
+│   └── utils/
+│
+├── 📁 config/                     ← Конфигурация
+│   ├── templates.json             ← Шаблоны сообщений
+│   └── chats.json                 ← Список чатов
+│
+├── 📁 sessions/                   ← Сессии Telegram
+├── 📁 photos/                     ← Фото для рассылки
+├── 📁 logs/                       ← Логи работы
+├── 📁 database/                   ← SQLite база
+│
+├── 📁 tests/                      ← Тесты и проверки
+├── 📁 docs/                       ← Документация
+├── 📁 utils/                      ← Утилиты
+├── 📁 scripts/                    ← Вспомогательные скрипты
+│
+├── 📄 .env                        ← Переменные окружения
+├── 📄 .env.example                ← Пример .env
+├── 📄 .gitignore                  ← Игнорирование файлов
+├── 📄 requirements.txt            ← Зависимости
+├── 📄 README.md                   ← Главная документация
+└── 📄 AI_RULES.md                 ← Правила для AI
+```

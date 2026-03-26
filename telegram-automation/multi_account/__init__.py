@@ -6,6 +6,8 @@ Multi-Account Telegram Broadcaster
 from .config import Config, AccountConfig
 from .manager import AccountManager
 from .broadcaster import MultiAccountBroadcaster, AccountBroadcaster, BroadcasterStats
+from .proxy_manager import ProxyManager, create_client_with_proxy, connect_account_with_proxy
+from .chat_join import ChatJoinManager
 
 __all__ = [
     'Config',
@@ -13,5 +15,9 @@ __all__ = [
     'AccountManager',
     'MultiAccountBroadcaster',
     'AccountBroadcaster',
-    'BroadcasterStats'
+    'BroadcasterStats',
+    'ProxyManager',
+    'create_client_with_proxy',
+    'connect_account_with_proxy',
+    'ChatJoinManager'
 ]

@@ -1,0 +1,13 @@
+node_modules
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+sessions/*.session
+config/*.json
+accounts.json
+.env
+logs/
+venv/
+.env.example
