@@ -1,8 +1,121 @@
 {
-  "_comment": "Чаты для рассылки (из аккаунта 1)",
+  "_comment": "Чаты для рассылки (+100 из CSV)",
   "_version": "1.0.0",
-  "_total": 101,
+  "_total": 196,
+  "_last_updated": "2026-03-30",
   "chats": [
+    {
+      "id": "rabotaravmos",
+      "name": "\"\"\"РАБОТА В МОСКВЕ\"\" \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" Москва и Московская область. Вакансии и резюме. Равмос.ру\"",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 27557
+    },
+    {
+      "id": "KiEv_Forex",
+      "name": "\"Forex Работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "job_in_hr",
+      "name": "\"HR Вакансии и работа кадровиком",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "Vakansii_rabota_03",
+      "name": "\"Вакансии",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "rabotavakrezmsk",
+      "name": "\"Вакансии",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "volgagradchat",
+      "name": "\"Волгоград работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "podrabotkaek",
+      "name": "\"Екатеринбург работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "melitopol_sale",
+      "name": "\"Мелитополь барахолка",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "hr032_32",
+      "name": "\"РАБОТА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "Rabota_v_obshchepite_uma",
+      "name": "\"Работа в общепите: официанты",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "spbrabotatut",
+      "name": "\"РАБОТА В ПИТЕРЕ / Подработка в СПБ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "rabotaekb2021",
+      "name": "\"РАБОТА Екатеринбург",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "podsobaraznorabo",
+      "name": "\"Разнорабочие в Москве",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
+    {
+      "id": "rabota0404",
+      "name": "\"Ремонт квартир",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 0
+    },
     {
       "id": "rabota_v_moskve_chat",
       "name": "[Чат] Работа | Москва | Вакансии | Подработка",
@@ -14,6 +127,14 @@
       "name": "CERBERUS",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "devops_jobs",
+      "name": "DevOps Jobs - работа и аналитика",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 19123
     },
     {
       "id": "elephantposttt",
@@ -34,10 +155,42 @@
       "enabled": true
     },
     {
+      "id": "tezwork_moskva",
+      "name": "TezWork.ru работа для граждан СНГ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 47156
+    },
+    {
+      "id": "maskvatayanchrabota",
+      "name": "Tаянч масква| 24/7 РАБОТА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 31214
+    },
+    {
+      "id": "wildberries_postavshchikii",
+      "name": "Wildberries поставщики",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 28660
+    },
+    {
       "id": "workarena",
       "name": "WORKARENA •ПОДРАБОТКИ МОСКВА",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "spb_trud",
+      "name": "WORK|ПИТЕР работа 👷🏻‍♂️найм",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 26006
     },
     {
       "id": "YandexPartnerGroup",
@@ -50,6 +203,14 @@
       "name": "YandexPartnerGroup Messages",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "m_worker_open",
+      "name": "«М» Работа/Подработка МОСКВА / Открытая группа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 33113
     },
     {
       "id": "qsrtuo",
@@ -82,10 +243,42 @@
       "enabled": true
     },
     {
+      "id": "autovoronezh36",
+      "name": "АВТОРЫНОК ВОРОНЕЖ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 23767
+    },
+    {
+      "id": "cpaworks",
+      "name": "Арбитраж трафика | Вакансии и работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 34069
+    },
+    {
       "id": "barmeny_lipetsk_rabota_chat",
       "name": "Бармены Липецк | Работа в баре, в ресторане, свежие вакансии, резюме, подработка в общепите, чат",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "tun_ing",
+      "name": "Беркат Авто Ингушетия",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 37693
+    },
+    {
+      "id": "rostov_rabotaet",
+      "name": "Биржа труда Ростов (подработка)",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 45931
     },
     {
       "id": "rabota_moskow_career",
@@ -112,6 +305,30 @@
       "enabled": true
     },
     {
+      "id": "nukus_rabota_N1",
+      "name": "ВАКАНСИЯ КАРАКАЛПАКСТАН",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 134124
+    },
+    {
+      "id": "Nukus_Nokis_rabota",
+      "name": "ВАКАНСИЯ КАРАКАЛПАКСТАН",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 54024
+    },
+    {
+      "id": "rabota_verif_chat",
+      "name": "Верификация Работа Европа [ЧАТ]",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22389
+    },
+    {
       "id": "vladivostok_rabota_ish_elonlari",
       "name": "ВЛАДИВОСТОК ОБЪЯВЛЕНИЯ О ВАКАНСИЯХ РЕКЛАМА",
       "type": "channel",
@@ -124,10 +341,26 @@
       "enabled": true
     },
     {
+      "id": "rabota125vld",
+      "name": "Владивосток Реклама и Работа ☪",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 20852
+    },
+    {
       "id": "vladivostok_ish_va_kvartira",
       "name": "Владивосток срочно работа",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "tayanch_moskvaishlar",
+      "name": "внимание москва работа N°1",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 191203
     },
     {
       "id": "moskva_ish_elonlari1",
@@ -160,10 +393,42 @@
       "enabled": true
     },
     {
+      "id": "vnemanya_rabota",
+      "name": "ден ноч работа Москва",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 31259
+    },
+    {
       "id": "2647729780",
       "name": "Доставка цветов Владивосток",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabotaekbelonlar",
+      "name": "Екатеринбург иш эьлонлари ва такси хизматлари!!!",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21595
+    },
+    {
+      "id": "rabota_ishlar_musofirlar_tayanch",
+      "name": "ЕКАТЕРИНБУРГ ЧЕЛЯБИНСК ТЮМЕНЬ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22902
+    },
+    {
+      "id": "zherdew_ru",
+      "name": "Жердеш Москва",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25351
     },
     {
       "id": "Jerdamoskvarabot",
@@ -172,10 +437,42 @@
       "enabled": true
     },
     {
+      "id": "jerdeshmoskva",
+      "name": "ЖЕРДЕШ МОСКВА 🇰🇬🇷🇺",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 89824
+    },
+    {
+      "id": "jerdesh_piter",
+      "name": "Жердеш ПИТИР",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 19530
+    },
+    {
       "id": "CianAvito",
       "name": "ЖУМУШ МОСКВА РАБОТА ХАЛТУРА БАРАКА",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "jumushmoskwa",
+      "name": "ЖУМУШ МОСКВА-RABOTA",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 76259
+    },
+    {
+      "id": "work_in_public_catering_moscow",
+      "name": "Индустрия питания Москва",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 30179
     },
     {
       "id": "kazan_vakansii_rabota",
@@ -188,6 +485,14 @@
       "name": "Казань / Срочные вакансии/ Запрос услуг",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "kazan_kzn_116",
+      "name": "Казань Доска Объявлений",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18159
     },
     {
       "id": "KazanRabotai",
@@ -206,6 +511,22 @@
       "name": "КАЗАНЬ°ОБЪЯВЛЕНИЯ°РАБОТА°ПОДРАБОТКА°БАРАХОЛКА°",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "nokis_rabota",
+      "name": "Каракалпакстан | Жумыс | Вакансия | Дагаза",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18247
+    },
+    {
+      "id": "krasnodardaish",
+      "name": "Краснодар МАХАЛЛА ОРИГИНАЛ ИШ КВ ЭЛОНЛАР",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 20600
     },
     {
       "id": "rabota_kunlik",
@@ -232,6 +553,14 @@
       "enabled": true
     },
     {
+      "id": "mekendeshmsk",
+      "name": "МЕКЕНДЕШТЕР МОСКВА 🇰🇬🇷🇺",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 20204
+    },
+    {
       "id": "uborka_moyka_msk",
       "name": "Мойщицы Мск | Подработка | Вакансии",
       "type": "channel",
@@ -244,10 +573,34 @@
       "enabled": true
     },
     {
+      "id": "chat_job",
+      "name": "Москва / Срочные вакансии",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 28933
+    },
+    {
       "id": "Mskjob2",
       "name": "Москва JOB работа",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "tayanch_moskva_rabota_vakansiya",
+      "name": "МОСКВА Moskva tayanch ish e'lon reklama vakansiya dakument taxi xaltura МОСКВАДА ТАЯНЧ n1",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 46758
+    },
+    {
+      "id": "moskvaTayanch_rabota",
+      "name": "Москва внимание падработка работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 59852
     },
     {
       "id": "rabotamskkg",
@@ -274,10 +627,34 @@
       "enabled": true
     },
     {
+      "id": "moskvarabotaelon",
+      "name": "МОСКВА РАБОТА ЭЛОН",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25962
+    },
+    {
       "id": "moskvarabotnik",
       "name": "МОСКВА РАБОТА, ЖУМУШ МОСКВА",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "moskvarabota777_01",
+      "name": "Москва Работа/Moscow work",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 24593
+    },
+    {
+      "id": "Tayanchmoskvaishlar",
+      "name": "МОСКВА 🇷🇺 РАБОТА 𝐓𝐀𝐘𝐀𝐍𝐂𝐇",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 19035
     },
     {
       "id": "rabota_in_piter",
@@ -328,10 +705,26 @@
       "enabled": true
     },
     {
+      "id": "adsistra",
+      "name": "Объявления | Барахолка | Доска объявлений Истра | Красногорск | Нахабино | Дедовск",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 24909
+    },
+    {
       "id": "dv_khabarovsk27",
       "name": "Объявления в Хабаровске",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabota_msk_tg",
+      "name": "Объявления.Вакансии.РФ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 35738
     },
     {
       "id": "ofitsianty_vladivostok_rabota",
@@ -376,6 +769,22 @@
       "enabled": true
     },
     {
+      "id": "rabotaspbspb",
+      "name": "Подработка в Питере.",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 30066
+    },
+    {
+      "id": "kznworkrabota116",
+      "name": "Подработка Казань 24 часа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22165
+    },
+    {
       "id": "podrabotkarabotarassia",
       "name": "Подработка работа халтура ПоРоссии.Уфа.Казань.Москва.",
       "type": "channel",
@@ -394,16 +803,104 @@
       "enabled": true
     },
     {
+      "id": "rabotatuva17rus",
+      "name": "РАБОТА * КЫЗЫЛ * ТЫВА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22935
+    },
+    {
       "id": "rabota_ru777",
       "name": "Работа - услуги - вакансии. Москва - Россия. 2023",
       "type": "channel",
       "enabled": true
     },
     {
+      "id": "Novosibirskuzbeklar_rabota54",
+      "name": "РАБОТА 54🇺🇿",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18483
+    },
+    {
+      "id": "tayanchmoskvaishelonbmt",
+      "name": "РАБОТА B МОСКВА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 48880
+    },
+    {
+      "id": "vakansii_frilanc",
+      "name": "РАБОТА | ВАКАНСИИ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25397
+    },
+    {
+      "id": "freelanc_rabota",
+      "name": "РАБОТА | ОНЛАЙН | ВАКАНСИИ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25731
+    },
+    {
+      "id": "rabotapiterelon",
+      "name": "РАБОТА | ПИТЕРДА ИШ ЭЛОН",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 29050
+    },
+    {
       "id": "rabota_msk_jobs",
       "name": "РАБОТА | ПОДРАБОТКА | ВАКАНСИИ | МОСКВА",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "vakansii_atyrau_rabota",
+      "name": "РАБОТА АТЫРАУ | ВАКАНСИИ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 35485
+    },
+    {
+      "id": "rabota_v_melitopole",
+      "name": "Работа в Мелитополе",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 40404
+    },
+    {
+      "id": "rabota_moskva_797",
+      "name": "РАБОТА В МОСКВЕ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 29807
+    },
+    {
+      "id": "rabota_vahta_msk",
+      "name": "Работа в Москве",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21520
+    },
+    {
+      "id": "rabota_msk_chat",
+      "name": "Работа в Москве [Вакансии]",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22851
     },
     {
       "id": "land_job",
@@ -416,6 +913,30 @@
       "name": "Работа в Москве Москва работа Доска Объявлений #работa",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabota_vpitere",
+      "name": "РАБОТА В ПИТЕР МОСКВА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 39615
+    },
+    {
+      "id": "rabotat_spb",
+      "name": "Работа в Питере",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 31400
+    },
+    {
+      "id": "rabotapvz",
+      "name": "Работа в пункте выдачи",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 20426
     },
     {
       "id": "adler_vakansii",
@@ -436,6 +957,14 @@
       "enabled": true
     },
     {
+      "id": "KazanRabota_116",
+      "name": "РАБОТА В ТАТАРСТАНЕ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 95792
+    },
+    {
       "id": "BLASK779",
       "name": "Работа ва реклама во ВЛАДИВОСТОК & ИШ ВА ЭЛОНЛАР€",
       "type": "channel",
@@ -454,6 +983,22 @@
       "enabled": true
     },
     {
+      "id": "rabotadnr180",
+      "name": "Работа ДНР / Вакансии Донецк / новая",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 80697
+    },
+    {
+      "id": "Rabota2020g",
+      "name": "Работа Екатеринбург",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 33356
+    },
+    {
       "id": "work_moskow_chat",
       "name": "Работа и Услуги Москва",
       "type": "channel",
@@ -466,10 +1011,34 @@
       "enabled": true
     },
     {
+      "id": "rabotalpr",
+      "name": "Работа ЛНР / Вакансии Луганск / Подработка / Центр занятости",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 96964
+    },
+    {
+      "id": "rabota_mariupol7",
+      "name": "Работа Мариуполь",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 20853
+    },
+    {
       "id": "Rabota_Moskva_Vakhta_sklad_group",
       "name": "Работа Москва Вахта (склады)",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabotamskstroypersonal",
+      "name": "Работа Москва ежедневная оплата",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 36278
     },
     {
       "id": "Work_Moskow_Russia",
@@ -490,6 +1059,22 @@
       "enabled": true
     },
     {
+      "id": "rabota_nokis_n1",
+      "name": "Работа Нокис | Вакансия",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22656
+    },
+    {
+      "id": "rabotavcemrf",
+      "name": "Работа Пермь Санкт Петербург Саратов Тольяти Chat",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 31745
+    },
+    {
       "id": "modelsmoscow777",
       "name": "Работа Подработка ежедневные выплаты , Москва",
       "type": "channel",
@@ -502,16 +1087,48 @@
       "enabled": true
     },
     {
+      "id": "rabota_spb_n1",
+      "name": "РАБОТА САНКТ-ПЕТЕРБУРГ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18455
+    },
+    {
       "id": "rabota_sochi_vakansii_chat",
       "name": "Работа Сочи | Вакансии | Чат",
       "type": "channel",
       "enabled": true
     },
     {
+      "id": "rabotastroykaspb",
+      "name": "Работа Стройка Питер 👍 Строительство Санкт-Петербург | Работа СПБ | Вакансии Питер | Ремонт квартир",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25962
+    },
+    {
       "id": "rabotaRT_16",
       "name": "Работа ТАТАРСТАН Казань Челны Альметьевск Елабуга",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "tatarstanrabota",
+      "name": "Работа Татарстан №1🟢 Казань Челны Нижнекамск Елабуга Альметьевск Бугульма",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 48132
+    },
+    {
+      "id": "eskort_vakansii",
+      "name": "Работа эскорт моделям 💖",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 22030
     },
     {
       "id": "Rabota_SFO_DVFO",
@@ -536,6 +1153,38 @@
       "name": "Реклама и работа во Владивостоке",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabota125uzb",
+      "name": "Реклама Работа Владивосток N1",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 27712
+    },
+    {
+      "id": "work_rabota_ua",
+      "name": "Робота Подработка Вакансії",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 45498
+    },
+    {
+      "id": "rossiyadagi_uzbeklar_rabota",
+      "name": "РОССИЯДАГИ МУСОФИРЛАР ИШЛАР",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 25439
+    },
+    {
+      "id": "rndrabotabezposrednikov161",
+      "name": "Ростов Барахолка и Работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21376
     },
     {
       "id": "zahodibrat62",
@@ -568,10 +1217,98 @@
       "enabled": true
     },
     {
+      "id": "losangeles_w",
+      "name": "Тoваpы Уcлуги Лoc-Анджeлес | Los Angeles",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21675
+    },
+    {
+      "id": "taximoskva4at",
+      "name": "Такси Москва. Чат",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 30078
+    },
+    {
+      "id": "taxi_city26",
+      "name": "ТАКСИ-СИТИ-ЖЕЛЕЗНОГОРСК",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21657
+    },
+    {
+      "id": "tayanchmaskvarabota",
+      "name": "ТАЯНЧ МАСКВА РАБОТА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 23109
+    },
+    {
+      "id": "moskva_rabota_kvartira",
+      "name": "ТАЯНЧИМ МОСКВА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 27393
+    },
+    {
+      "id": "chicago_k",
+      "name": "Товары Услуги Чикаго",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18380
+    },
+    {
+      "id": "moskva1717",
+      "name": "ТОЛЬКО РОБОТА И ПОДРАБОТКА МОСКВА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 34755
+    },
+    {
       "id": "yclugibezen",
       "name": "Услуги безенчук",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabotavakansij",
+      "name": "ЧАТ ВАКАНСИИ РАБОТА",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 28581
+    },
+    {
+      "id": "chat_rabota_vakansii",
+      "name": "ЧАТ РАБОТА ВАКАНСИИ ОМСК АБАКАН ПЕРМЬ ИЖЕВСК КИРОВ",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 21122
+    },
+    {
+      "id": "rabotajvmsk",
+      "name": "✊Работа/подработка/Москва/МСК",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 32671
+    },
+    {
+      "id": "maskvadarabota",
+      "name": "🇷🇺МОСКВА В РАБОТА🇺🇿",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18087
     },
     {
       "id": "ishborVladivastok",
@@ -598,10 +1335,34 @@
       "enabled": true
     },
     {
+      "id": "rabotkaz_chat",
+      "name": "👷Казань работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 19477
+    },
+    {
+      "id": "rabotspb_chat",
+      "name": "👷‍♂️Питер работа",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18201
+    },
+    {
       "id": "huuriromol8917nigora",
       "name": "💜💜💜 ХУРИ РОМОЛЛАРИ ОПТОМ.💜💜💜😃😃",
       "type": "channel",
       "enabled": true
+    },
+    {
+      "id": "rabotasngvpitere",
+      "name": "📍РАБОТА И ЖИЛЬЁ ДЛЯ ГРАЖДАН СНГ В СПБ 📍",
+      "type": "channel",
+      "enabled": true,
+      "source": "csv_import",
+      "users_count": 18060
     },
     {
       "id": "shukhrat88Tigr",

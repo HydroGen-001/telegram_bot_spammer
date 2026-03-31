@@ -22,7 +22,8 @@
         "host": "mobpool.proxy.market",
         "port": 10000,
         "username": "rTtqcDc4t0Kg",
-        "password": "wkLYa1bq"
+        "password": "wkLYa1bq",
+        "proxy_type": "http"
       },
       "script": {
         "enabled": true,

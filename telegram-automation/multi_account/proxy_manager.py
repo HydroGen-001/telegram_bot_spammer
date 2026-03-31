@@ -73,6 +73,7 @@ class ProxyManager:
             proxy_port = int(proxy_config.get('port', 0))
             proxy_username = proxy_config.get('username', '')
             proxy_password = proxy_config.get('password', '')
+            proxy_type = proxy_config.get('proxy_type', 'http')
 
             if not proxy_host or not proxy_port:
                 return False
@@ -80,9 +81,10 @@ class ProxyManager:
             # Получаем актуальный IP (для мобильных прокси с ротацией)
             proxy_ip = socket.gethostbyname(proxy_host)
 
-            # Создаём proxy_dict (правильный формат для Telethon 1.42+)
+            # Создаём proxy_dict (формат для python-socks / Telethon 1.42+)
+            # Мобильные прокси используют HTTP, но SOCKS5 тоже поддерживается
             proxy_dict = {
-                'proxy_type': 'socks5',
+                'proxy_type': proxy_type,
                 'addr': proxy_ip,
                 'port': proxy_port,
             }
@@ -100,6 +102,7 @@ class ProxyManager:
                 'host': proxy_host,
                 'ip': proxy_ip,
                 'port': proxy_port,
+                'type': proxy_type,
                 'enabled': True
             }
 

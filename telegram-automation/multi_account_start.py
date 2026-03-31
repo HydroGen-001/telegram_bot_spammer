@@ -224,50 +224,40 @@ async def check_accounts_ready() -> List[Dict]:
         if session_path.exists():
             has_session = True
 
-        # Проверка авторизации (с таймаутом 20 сек + прокси через ProxyManager)
+        # Проверка авторизации (без таймаута — подключение сразу)
         is_authorized = False
-        timeout_error = False
         proxy_info = None
 
         if has_session and has_api:
-            # Две попытки подключения
-            for attempt in range(2):
-                try:
-                    # Используем ProxyManager для корректной настройки прокси
-                    from multi_account import ProxyManager
-                    proxy_manager = ProxyManager()
+            try:
+                # Используем ProxyManager для корректной настройки прокси
+                from multi_account import ProxyManager
+                proxy_manager = ProxyManager()
 
-                    # Создаём конфигурацию аккаунта
-                    account_config = AccountConfig(acc)
+                # Создаём конфигурацию аккаунта
+                account_config = AccountConfig(acc)
 
-                    # Создаём клиента с прокси
-                    client = proxy_manager.create_client_with_proxy(account_config)
+                # Создаём клиента с прокси
+                client = proxy_manager.create_client_with_proxy(account_config)
 
-                    timeout = 20 if attempt == 0 else 10
-                    await asyncio.wait_for(client.connect(), timeout=timeout)
+                # Подключение БЕЗ таймаута
+                await client.connect()
 
-                    if await client.is_user_authorized():
-                        is_authorized = True
-                        me = await client.get_me()
-                        username = me.username or me.first_name
+                if await client.is_user_authorized():
+                    is_authorized = True
+                    me = await client.get_me()
+                    username = me.username or me.first_name
 
-                        # Получаем информацию о прокси
-                        proxy_state = proxy_manager.get_proxy_state(acc.get('id', 0))
-                        if proxy_state and proxy_state.get('enabled'):
-                            proxy_info = f"{proxy_state.get('host')} → {proxy_state.get('ip')}:{proxy_state.get('port')}"
+                    # Получаем информацию о прокси
+                    proxy_state = proxy_manager.get_proxy_state(acc.get('id', 0))
+                    if proxy_state and proxy_state.get('enabled'):
+                        proxy_info = f"{proxy_state.get('host')} → {proxy_state.get('ip')}:{proxy_state.get('port')}"
 
-                    await client.disconnect()
-                    break  # Успех — выход из цикла попыток
+                await client.disconnect()
 
-                except asyncio.TimeoutError:
-                    timeout_error = True
-                    if attempt == 0:
-                        print(f"      [Попытка {attempt + 1}] Таймаут, повтор...")
-                    continue
-                except Exception as e:
-                    # Логирование ошибки для отладки
-                    print(f"      [DEBUG] Ошибка подключения: {type(e).__name__}: {e}")
-                    break
+            except Exception as e:
+                # Логирование ошибки для отладки
+                print(f"      [DEBUG] Ошибка подключения: {type(e).__name__}: {e}")
 
         # Статус
         is_ready = has_api and has_phone and has_session and is_authorized
@@ -281,10 +271,7 @@ async def check_accounts_ready() -> List[Dict]:
         if not has_session:
             reason.append("нет сессии")
         if not is_authorized:
-            if timeout_error:
-                reason.append("таймаут подключения")
-            else:
-                reason.append("не авторизован")
+            reason.append("не авторизован")
 
         reason_str = ", ".join(reason) if reason else "готов"
         acc_name = acc.get('name', f"Аккаунт {acc.get('id')}")
@@ -871,7 +858,7 @@ async def send_message_with_photo(
     Отправить сообщение: текст + фото/пересылка
     Возвращает True если текст отправлен
     """
-    from telethon.errors import FloodWaitError
+    from telethon.errors import FloodWaitError, ChatWriteForbiddenError, ChannelPrivateError
 
     # Проверка: chat_id не должен быть пустым
     if not chat_id or not chat_id.strip():
@@ -881,39 +868,46 @@ async def send_message_with_photo(
     try:
         await client.send_message(chat_id, text)
     except FloodWaitError as e:
-        log.error(f"FloodWait: ждём {e.seconds} сек")
+        log.warning(f"FloodWait: ждём {e.seconds} сек")
         await asyncio.sleep(e.seconds)
         await client.send_message(chat_id, text)
+    except ChatWriteForbiddenError:
+        # Нет прав на запись в канале
+        return False
+    except ChannelPrivateError:
+        # Частный канал, нет доступа
+        return False
     except ValueError as e:
         # Ошибка: чат не найден
-        log.error(f"Чат не найден: {chat_id}")
+        log.warning(f"Чат не найден: {chat_id}")
         return False
     except Exception as e:
         error_name = type(e).__name__
         # Пропускаем ошибки записи в каналы
         if 'WriteForbidden' in error_name or 'ChannelPrivate' in error_name:
-            log.error(f"Нет доступа: {chat_id} ({error_name})")
+            return False
         else:
             log.error(f"Текст не отправлен: {error_name}: {e}")
-        return False
+            return False
 
     # 2. Отправляем фото или пересылаем из избранного
     if photo_path and photo_path.exists():
         try:
             await client.send_file(chat_id, photo_path)
         except FloodWaitError as e:
-            log.error(f"FloodWait (фото): {e.seconds} сек")
+            log.warning(f"FloodWait (фото): {e.seconds} сек")
             await asyncio.sleep(e.seconds)
         except Exception as e:
-            log.error(f"Фото не отправлено: {type(e).__name__}: {e}")
+            # Фото не критично
+            pass
     elif forward_from_msg_id:
         try:
             await client.forward_messages(chat_id, forward_from_msg_id, from_peer='me')
         except FloodWaitError as e:
-            log.error(f"FloodWait (пересылка): {e.seconds} сек")
+            log.warning(f"FloodWait (пересылка): {e.seconds} сек")
             await asyncio.sleep(e.seconds)
         except Exception as e:
-            log.error(f"Пересылка не удалась: {type(e).__name__}: {e}")
+            pass
 
     return True
 
@@ -925,17 +919,32 @@ async def broadcast_with_account(
     text: str,
     photo_path: Optional[Path] = None,
     min_delay: int = 50,
-    max_delay: int = 100
+    max_delay: int = 100,
+    start_from: int = 0
 ) -> Dict:
-    """Рассылка с одного аккаунта с логированием"""
+    """
+    Рассылка с одного аккаунта с логированием и возможностью продолжения
+    
+    Args:
+        start_from: Индекс чата, с которого продолжить (0 = с начала)
+    """
     import random
+    from telethon.errors import ChatWriteForbiddenError, ChannelPrivateError
 
-    stats = {'total': len(chats), 'sent': 0, 'failed': 0, 'errors': []}
-    random.shuffle(chats)
-
-    for i, chat in enumerate(chats, 1):
+    stats = {'total': len(chats), 'sent': 0, 'failed': 0, 'errors': [], 'last_index': start_from}
+    
+    # Перемешиваем только если начинаем с начала
+    if start_from == 0:
+        random.shuffle(chats)
+    
+    # Заголовок рассылки
+    print(f"\n{'=' * 70}", flush=True)
+    print(f"📤 РАССЫЛКА: {len(chats) - start_from} чатов, с позиции {start_from}", flush=True)
+    print(f"{'=' * 70}", flush=True)
+    
+    for i, chat in enumerate(chats[start_from:], start_from):
         chat_id = chat['id']
-        chat_name = chat.get('name', chat_id)
+        chat_name = chat.get('name', chat_id)[:55]
 
         # Отправка
         success = await send_message_with_photo(
@@ -948,22 +957,62 @@ async def broadcast_with_account(
 
         if success:
             stats['sent'] += 1
-            log.info(f"[{i}/{len(chats)}] ✓ {chat_name}")
+            print(f"  [{i + 1:3d}/{len(chats)}] ✅ ОТПРАВЛЕНО | {chat_name}", flush=True)
         else:
             stats['failed'] += 1
-            stats['errors'].append({'chat': chat_name, 'id': chat_id})
-            log.error(f"[{i}/{len(chats)}] ✗ {chat_name}")
+            stats['errors'].append({'chat': chat_name, 'id': chat_id, 'error': 'Нет доступа'})
+            print(f"  [{i + 1:3d}/{len(chats)}] ❌ НЕ ВЫШЛО   | {chat_name}", flush=True)
+
+        # Сохраняем прогресс
+        stats['last_index'] = i + 1
 
         # Задержка
-        if i < len(chats):
+        if i < len(chats) - 1:
             delay = random.randint(min_delay, max_delay)
-            for sec in range(delay, 0, -1):
-                mins, secs = divmod(sec, 60)
-                print(f"\r   Пауза: {mins:02d}:{secs:02d}  ", end='', flush=True)
-                await asyncio.sleep(1)
-            print()
+            mins, secs = divmod(delay, 60)
+            print(f"\r      ⏳ Пауза: {mins:02d}:{secs:02d}  ", end='', flush=True)
+            await asyncio.sleep(delay)
+            print("          ", end='', flush=True)  # Очистка строки
+            print("\r", end='', flush=True)
+
+    # Итоговый отчёт
+    print(f"\n{'=' * 70}", flush=True)
+    print(f"📊 ОТЧЁТ О РАССЫЛКЕ", flush=True)
+    print(f"{'=' * 70}", flush=True)
+    print(f"\n  ✅ Успешно:     {stats['sent']}", flush=True)
+    print(f"  ❌ Ошибки:      {stats['failed']}", flush=True)
+    print(f"  📋 Всего:       {stats['total']}", flush=True)
+    
+    if stats['total'] > 0:
+        rate = stats['sent'] / stats['total'] * 100
+        print(f"  📈 Процент:     {rate:.1f}%", flush=True)
+    
+    if stats['errors']:
+        print(f"\n⚠️  ОШИБКИ ({len(stats['errors'])}):", flush=True)
+        for err in stats['errors'][:10]:
+            print(f"     • {err.get('chat', 'Unknown')[:50]}: {err.get('error', 'Unknown')}", flush=True)
+        if len(stats['errors']) > 10:
+            print(f"     ... и ещё {len(stats['errors']) - 10}", flush=True)
+    
+    print(f"\n{'=' * 70}\n", flush=True)
 
     return stats
+
+
+async def broadcast_with_account_resume(
+    client: TelegramClient,
+    account: Dict,
+    chats: List[Dict],
+    text: str,
+    photo_path: Optional[Path] = None,
+    min_delay: int = 50,
+    max_delay: int = 100,
+    start_from: int = 0
+) -> Dict:
+    """Обёртка для совместимости — использует broadcast_with_account"""
+    return await broadcast_with_account(
+        client, account, chats, text, photo_path, min_delay, max_delay, start_from
+    )
 
 
 async def run_broadcast():
@@ -1072,8 +1121,10 @@ async def run_broadcast():
                 import socket
                 try:
                     proxy_ip = socket.gethostbyname(proxy.get('host'))
+                    # Определяем тип прокси (по умолчанию HTTP для мобильных прокси)
+                    proxy_type = proxy.get('proxy_type', 'http')
                     proxy_dict = {
-                        'proxy_type': 'socks5',
+                        'proxy_type': proxy_type,
                         'addr': proxy_ip,
                         'port': proxy.get('port', 0),
                     }
@@ -1082,7 +1133,7 @@ async def run_broadcast():
                     if proxy.get('password'):
                         proxy_dict['password'] = proxy.get('password')
                     client.set_proxy(proxy_dict)
-                    log.info(f"Прокси: {proxy.get('host')} → {proxy_ip}:{proxy.get('port')}")
+                    log.info(f"Прокси: {proxy.get('host')} → {proxy_ip}:{proxy.get('port')} ({proxy_type})")
                 except Exception as e:
                     log.warning(f"Не удалось настроить прокси: {e}")
 
@@ -1098,8 +1149,9 @@ async def run_broadcast():
             if use_photo:
                 photo_path = acc_config.get_photo_path()
 
+            # Запуск с индексом 0 (с начала)
             tasks.append(
-                broadcast_task(client, acc, acc_chats, text, photo_path)
+                broadcast_task(client, acc, acc_chats, text, photo_path, start_from=0)
             )
 
         # Выполняем все задачи
@@ -1145,50 +1197,103 @@ async def broadcast_task(
     account: Dict,
     chats: List[Dict],
     text: str,
-    photo_path: Optional[Path] = None
+    photo_path: Optional[Path] = None,
+    start_from: int = 0
 ):
-    """Задача рассылки для одного аккаунта"""
+    """
+    Задача рассылки для одного аккаунта с авто-перезапуском
+    
+    Args:
+        start_from: Индекс чата, с которого продолжить (для перезапуска)
+    """
     import random
-
+    from telethon.errors import ChatWriteForbiddenError, ChannelPrivateError, FloodWaitError
+    
     acc_name = account.get('name', f"Аккаунт {account.get('id')}")
-
-    try:
-        await client.connect()
-
-        if not await client.is_user_authorized():
-            log.error(f"{acc_name}: не авторизован")
+    reconnect_attempts = 0
+    max_reconnect_attempts = 5
+    
+    stats = {'total': len(chats), 'sent': 0, 'failed': 0, 'errors': [], 'last_index': start_from}
+    
+    while reconnect_attempts < max_reconnect_attempts:
+        try:
+            # Подключение
+            if not await client.is_user_authorized():
+                await client.connect()
+            
+            if not await client.is_user_authorized():
+                log.error(f"{acc_name}: не авторизован")
+                await client.disconnect()
+                return {'total': len(chats), 'sent': 0, 'failed': len(chats), 'errors': [], 'last_index': start_from}
+            
+            me = await client.get_me()
+            
+            # Если это перезапуск — логируем
+            if start_from > 0:
+                log.info(f"\n{'=' * 40}")
+                log.info(f"{acc_name} (@{me.username or me.first_name}) - ПЕРЕЗАПУСК с чата #{start_from}")
+                log.info(f"{'=' * 40}")
+            else:
+                log.info(f"\n{'=' * 40}")
+                log.info(f"{acc_name} (@{me.username or me.first_name})")
+                log.info(f"Чатов: {len(chats)}")
+                log.info(f"{'=' * 40}")
+            
+            limits = account.get('limits', {})
+            min_delay = limits.get('min_delay', 50)
+            max_delay = limits.get('max_delay', 100)
+            
+            # Рассылка с продолжения
+            stats = await broadcast_with_account_resume(
+                client,
+                account,
+                chats,
+                text,
+                photo_path,
+                min_delay,
+                max_delay,
+                start_from
+            )
+            
+            log.info(f"\n✓ {acc_name} завершил: {stats['sent']}/{len(chats) - start_from}")
+            
             await client.disconnect()
-            return {'total': len(chats), 'sent': 0, 'failed': len(chats), 'errors': []}
-
-        me = await client.get_me()
-        log.info(f"\n{'=' * 40}")
-        log.info(f"{acc_name} (@{me.username or me.first_name})")
-        log.info(f"Чатов: {len(chats)}")
-        log.info(f"{'=' * 40}")
-
-        limits = account.get('limits', {})
-        min_delay = limits.get('min_delay', 50)
-        max_delay = limits.get('max_delay', 100)
-
-        stats = await broadcast_with_account(
-            client,
-            account,
-            chats,
-            text,
-            photo_path,
-            min_delay,
-            max_delay
-        )
-
-        log.info(f"\n✓ {acc_name} завершил: {stats['sent']}/{len(chats)}")
-
-        await client.disconnect()
-        return stats
-
-    except Exception as e:
-        log.error(f"{acc_name}: {type(e).__name__}: {e}")
-        await client.disconnect()
-        return {'total': len(chats), 'sent': 0, 'failed': len(chats), 'errors': [{'chat': 'system', 'error': str(e)}]}
+            return stats
+            
+        except (ChatWriteForbiddenError, ChannelPrivateError) as e:
+            # Эти ошибки не критичны — просто пропускаем чат
+            reconnect_attempts += 1
+            continue
+            
+        except FloodWaitError as e:
+            log.warning(f"{acc_name}: FloodWait {e.seconds} сек, ждём...")
+            await asyncio.sleep(e.seconds)
+            reconnect_attempts += 1
+            
+        except Exception as e:
+            error_name = type(e).__name__
+            log.error(f"{acc_name}: {error_name}: {e}")
+            
+            # Критические ошибки — пробуем переподключиться
+            if 'ConnectionError' in error_name or 'DisconnectError' in error_name or 'TimeoutError' in error_name:
+                reconnect_attempts += 1
+                if reconnect_attempts < max_reconnect_attempts:
+                    log.info(f"{acc_name}: Переподключение (попытка {reconnect_attempts}/{max_reconnect_attempts})...")
+                    await asyncio.sleep(5)
+                    try:
+                        await client.disconnect()
+                        await client.connect()
+                    except:
+                        pass
+                    continue
+            
+            await client.disconnect()
+            return {'total': len(chats), 'sent': stats.get('sent', 0), 'failed': stats.get('failed', 0), 'errors': stats.get('errors', []), 'last_index': stats.get('last_index', start_from)}
+    
+    # Превышено количество попыток
+    log.error(f"{acc_name}: Превышено количество попыток подключения ({max_reconnect_attempts})")
+    await client.disconnect()
+    return {'total': len(chats), 'sent': stats.get('sent', 0), 'failed': stats.get('failed', 0), 'errors': stats.get('errors', []), 'last_index': stats.get('last_index', start_from)}
 
 
 # =============================================================================
@@ -1312,8 +1417,10 @@ async def auth_and_collect_chats():
         import socket
         try:
             proxy_ip = socket.gethostbyname(proxy.get('host'))
+            # Определяем тип прокси (по умолчанию HTTP для мобильных прокси)
+            proxy_type = proxy.get('proxy_type', 'http')
             proxy_dict = {
-                'proxy_type': 'socks5',
+                'proxy_type': proxy_type,
                 'addr': proxy_ip,
                 'port': proxy.get('port', 0),
             }
@@ -1322,7 +1429,7 @@ async def auth_and_collect_chats():
             if proxy.get('password'):
                 proxy_dict['password'] = proxy.get('password')
             client.set_proxy(proxy_dict)
-            log.info(f"Прокси: {proxy.get('host')} → {proxy_ip}:{proxy.get('port')}")
+            log.info(f"Прокси: {proxy.get('host')} → {proxy_ip}:{proxy.get('port')} ({proxy_type})")
         except Exception as e:
             log.warning(f"Не удалось настроить прокси: {e}")
 

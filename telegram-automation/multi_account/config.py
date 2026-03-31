@@ -103,7 +103,8 @@ class AccountConfig:
         self.api_id = int(account_data.get('api_id', 0))
         self.api_hash = account_data.get('api_hash', '')
         self.phone = account_data.get('phone', '')
-    
+        self.proxy = account_data.get('proxy', {})
+
     @property
     def session_path(self) -> Path:
         """Путь к сессии"""

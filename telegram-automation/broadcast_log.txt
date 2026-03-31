@@ -1,0 +1,27 @@
+
+[1m============================================================[0m
+[1mMULTI-ACCOUNT BROADCASTER[0m
+[1m============================================================[0m
+  Аккаунтов: 3 (включено: 1)
+
+  1. Запустить рассылку
+  2. Проверить готовность аккаунтов
+  3. Аккаунты
+  4. Добавить аккаунт
+  5. Загрузить чаты из Telegram
+  6. Импортировать чаты из CSV
+  7. Вступить в чаты (из базы)
+  8. Распределить чаты (по 200 на аккаунт)
+  9. Статистика чатов
+  10. Проверить сессии
+  0. Выход
+
+Выбор (0-10): Traceback (most recent call last):
+  File "c:\Users\ACER\OneDrive\Desktop\project\telegram-automation\multi_account_start.py", line 2031, in <module>
+    show_menu()
+    ~~~~~~~~~^^
+  File "c:\Users\ACER\OneDrive\Desktop\project\telegram-automation\multi_account_start.py", line 1303, in show_menu
+    choice = input("Выбор (0-10): ").strip()
+             ~~~~~^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+[91m[ERROR][0m Ошибка: EOF when reading a line
